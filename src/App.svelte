@@ -1,5 +1,10 @@
 <script>
-	let name = 'world';
+  import AppHeader from "./components/AppHeader.svelte";
+
+  let name = "world";
 </script>
 
-<h1>Hello {name}!</h1>
+<AppHeader />
+<div>
+  <h1>Hello {name}!</h1>
+</div>

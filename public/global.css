@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+  --main-bg-color: black;
+  --main-text-color: white;
+  --green-text-color: #00ff3c;
+  --yellow-text-color: #eefa11;
+  --app-header-height: 3.5rem;
+}
+
 html, body {
 	position: relative;
 	width: 100%;
@@ -5,9 +16,10 @@ html, body {
 }
 
 body {
-	color: #333;
+	background-color: var(--main-bg-color, black);
+	color: var(--main-text-color, white);
 	margin: 0;
-	padding: 8px;
+	padding: 0;
 	box-sizing: border-box;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
@@ -59,4 +71,12 @@ button:active {
 
 button:focus {
 	border-color: #666;
+}
+
+.green-text {
+  color: var(--green-text-color, green);
+}
+
+.yellow-text {
+  color: var(--yellow-text-color, yellow);
 }
