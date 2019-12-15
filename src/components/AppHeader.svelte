@@ -1,3 +1,7 @@
+<script>
+  import { link } from "svelte-spa-router";
+</script>
+
 <style type="text/scss">
   $nav-text-size: 1.15rem;
 
@@ -95,14 +99,14 @@
 
 <header class="header">
   <div class="branding">
-    <a href="/" class="nav-link">
+    <a href="/" class="nav-link" use:link>
       <img src="favicon.png" alt="Fanhunter Rogue icon" />
       <span class="title">Fanhunter Rogue</span>
     </a>
   </div>
   <div class="header-nav">
-    <a href="/about" class="nav-link nav-text">About</a>
-    <a href="/contact" class="nav-link nav-text">Contact</a>
+    <a href="/about" class="nav-link nav-text" use:link>About</a>
+    <a href="/contact" class="nav-link nav-text" use:link>Contact</a>
   </div>
   <div class="header-actions">
     <button class="lang-btn">
