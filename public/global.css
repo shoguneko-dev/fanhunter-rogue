@@ -49,7 +49,7 @@ input, button, select, textarea {
 	box-sizing: border-box;
 	border: 1px solid #ccc;
 	border-radius: 2px;
-	color: var(--main-text-color, black);
+	color: var(--main-text-color, white);
 }
 
 input:disabled {
